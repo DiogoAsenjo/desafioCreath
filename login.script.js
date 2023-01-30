@@ -1,6 +1,16 @@
-const usuario = document.getElementById("usuario").value;
-const senha = document.getElementById("senha").value;
+function validateEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+}
 
-if (usuario === "123" && senha === "123") {
-    alert ("Login realizado com sucesso")
+//Função para validar os campos e poder clicar no botão entrar.
+
+function validandoCampos() {
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+
+    if (validateEmail(email) && senha) {
+        document.getElementById("botao-entrar").disabled = false;
+    } else {
+        document.getElementById("botao-entrar").disabled = true;
+    }
 }

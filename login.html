@@ -10,10 +10,14 @@
 <body>
     <section>
         <h1>Entrar</h1>
-        <input type="email" name="email" id="usuario" placeholder="seu@e-mail.com">
-        <input type="password" name="password" id="senha" placeholder="senha">
+        <input type="email" name="email" id="email" placeholder="seu@e-mail.com" onchange="validandoCampos()">
+        <p class="error">Campo obrigatório!</p>
+        <p class="error">Usuário inválido!</p>
+        <input type="password" name="password" id="senha" placeholder="senha" onchange="validandoCampos()">
+        <p class="error">Campo obrigatório!</p>
+        <p class="error">Senha inválida!</p>
         <br>
-        <button>Entrar</button>
+        <button disabled="true" id="botao-entrar">Entrar</button>
         <br>
          <a href="">Esqueceu a senha?</a>
     </section>
