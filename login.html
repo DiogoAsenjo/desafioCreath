@@ -11,10 +11,10 @@
     <section>
         <h1>Entrar</h1>
         <input type="email" name="email" id="email" placeholder="seu@e-mail.com" onchange="validandoCampos()">
-        <p class="error">Campo obrigatório!</p>
-        <p class="error">Usuário inválido!</p>
+        <p class="error" id="email-required">E-mail obrigatório!</p>
+        <p class="error" id="email-invalid">E-mail inválido!</p>
         <input type="password" name="password" id="senha" placeholder="senha" onchange="validandoCampos()">
-        <p class="error">Campo obrigatório!</p>
+        <p class="error">Senha obrigatória!</p>
         <p class="error">Senha inválida!</p>
         <br>
         <button disabled="true" id="botao-entrar">Entrar</button>

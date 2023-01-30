@@ -25,7 +25,7 @@ button {
     margin: 8px;
 }
 
-.error {
+.error{
     color: red;
     display: none;
 }
