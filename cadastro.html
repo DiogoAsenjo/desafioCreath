@@ -11,15 +11,17 @@
     <form action="">
         <h1>Crie sua conta</h1>
         <label for="email">Email: </label>
-        <input type="email" name="email" placeholder="seu@email.com">
+        <input type="email" name="email" placeholder="seu@email.com" id="email" onchange="validandoCampos()">
         <br>
         <label for="password">Senha: </label>
-        <input type="password" name="password">
+        <input type="password" name="password" id="senha">
         <br>
         <label for="password">Senha: </label>
-        <input type="password" name="password" placeholder="Confirme sua senha.">
+        <input type="password" name="password" placeholder="Confirme sua senha." id="confirmar-senha">
         <br>
-        <button>Registar</button>
+        <button disabled="true
+        " id="botao-registar">Registar</button>
     </form>
+    <script src="register.script.js"></script>
 </body>
 </html>
